@@ -25,12 +25,11 @@ function draw() {
   ellipse(width / 2, height / 2, 500, 500);
   eyes_right.update(mouseX, mouseY); eyes_right.display();
   eyes_left.update(mouseX, mouseY); eyes_left.display();
-  if(adjustedMicLevel < 200) {
+  if(adjustedMicLevel < 225) {
     fill(255, 0, 0);
     ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
   } else {
-    fill(255, 0, 0);
-    ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
+    ellipse(width / 2, height / 2 + 100, 350, 225);
   }
 }
 
