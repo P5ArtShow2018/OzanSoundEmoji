@@ -25,8 +25,13 @@ function draw() {
   ellipse(width / 2, height / 2, 500, 500);
   eyes_right.update(mouseX, mouseY); eyes_right.display();
   eyes_left.update(mouseX, mouseY); eyes_left.display();
-  fill(255, 0, 0);
-  ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
+  if(adjustedMicLevel < 200) {
+    fill(255, 0, 0);
+    ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
+  } else {
+    fill(255, 0, 0);
+    ellipse(width / 2, height /  + 100, 350, adjustedMicLevel);
+  }
 }
 
 function windowResized() { resizeCanvas(window.innerWidth, window.innerHeight); }
