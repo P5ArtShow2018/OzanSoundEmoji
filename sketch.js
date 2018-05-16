@@ -30,7 +30,7 @@ function draw() {
     ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
   } else {
     fill(255, 0, 0);
-    ellipse(width / 2, height /  + 100, 350, adjustedMicLevel);
+    ellipse(width / 2, height / 2 + 100, 350, adjustedMicLevel);
   }
 }
 
